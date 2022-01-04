@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35135D85A084A75BA2BA5C45 /* Pods_ExLocationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A7BF753600F75AC8BA509C /* Pods_ExLocationPermission.framework */; };
 		C63333682784890C00EC1061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63333672784890C00EC1061 /* AppDelegate.swift */; };
 		C633336A2784890C00EC1061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63333692784890C00EC1061 /* SceneDelegate.swift */; };
 		C633336C2784890C00EC1061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633336B2784890C00EC1061 /* ViewController.swift */; };
 		C633336F2784890C00EC1061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C633336D2784890C00EC1061 /* Main.storyboard */; };
 		C63333712784890E00EC1061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63333702784890E00EC1061 /* Assets.xcassets */; };
 		C63333742784890E00EC1061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63333722784890E00EC1061 /* LaunchScreen.storyboard */; };
+		C633337C2784895500EC1061 /* LocationPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C633337B2784895500EC1061 /* LocationPermissionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02A7BF753600F75AC8BA509C /* Pods_ExLocationPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExLocationPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5776AB2AE08496CC3E6BE0BE /* Pods-ExLocationPermission.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExLocationPermission.release.xcconfig"; path = "Target Support Files/Pods-ExLocationPermission/Pods-ExLocationPermission.release.xcconfig"; sourceTree = "<group>"; };
+		6683913E58FA032320CB7AC8 /* Pods-ExLocationPermission.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExLocationPermission.debug.xcconfig"; path = "Target Support Files/Pods-ExLocationPermission/Pods-ExLocationPermission.debug.xcconfig"; sourceTree = "<group>"; };
 		C63333642784890C00EC1061 /* ExLocationPermission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExLocationPermission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63333672784890C00EC1061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C63333692784890C00EC1061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		C63333702784890E00EC1061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63333732784890E00EC1061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C63333752784890E00EC1061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C633337B2784895500EC1061 /* LocationPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35135D85A084A75BA2BA5C45 /* Pods_ExLocationPermission.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2096D1C60F6E4F1AE6885FE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6683913E58FA032320CB7AC8 /* Pods-ExLocationPermission.debug.xcconfig */,
+				5776AB2AE08496CC3E6BE0BE /* Pods-ExLocationPermission.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C633335B2784890C00EC1061 = {
 			isa = PBXGroup;
 			children = (
 				C63333662784890C00EC1061 /* ExLocationPermission */,
 				C63333652784890C00EC1061 /* Products */,
+				2096D1C60F6E4F1AE6885FE8 /* Pods */,
+				C9FCB65A8DFFA0F4D4776CC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				C63333672784890C00EC1061 /* AppDelegate.swift */,
 				C63333692784890C00EC1061 /* SceneDelegate.swift */,
 				C633336B2784890C00EC1061 /* ViewController.swift */,
+				C633337B2784895500EC1061 /* LocationPermissionManager.swift */,
 				C633336D2784890C00EC1061 /* Main.storyboard */,
 				C63333702784890E00EC1061 /* Assets.xcassets */,
 				C63333722784890E00EC1061 /* LaunchScreen.storyboard */,
 				C63333752784890E00EC1061 /* Info.plist */,
 			);
 			path = ExLocationPermission;
+			sourceTree = "<group>";
+		};
+		C9FCB65A8DFFA0F4D4776CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02A7BF753600F75AC8BA509C /* Pods_ExLocationPermission.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C63333782784890E00EC1061 /* Build configuration list for PBXNativeTarget "ExLocationPermission" */;
 			buildPhases = (
+				4A0C259B14F2FE780573D4CF /* [CP] Check Pods Manifest.lock */,
 				C63333602784890C00EC1061 /* Sources */,
 				C63333612784890C00EC1061 /* Frameworks */,
 				C63333622784890C00EC1061 /* Resources */,
+				EECE82728D1AC76C95B68966 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A0C259B14F2FE780573D4CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExLocationPermission-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECE82728D1AC76C95B68966 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExLocationPermission/Pods-ExLocationPermission-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExLocationPermission/Pods-ExLocationPermission-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExLocationPermission/Pods-ExLocationPermission-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C63333602784890C00EC1061 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				C633336C2784890C00EC1061 /* ViewController.swift in Sources */,
 				C63333682784890C00EC1061 /* AppDelegate.swift in Sources */,
 				C633336A2784890C00EC1061 /* SceneDelegate.swift in Sources */,
+				C633337C2784895500EC1061 /* LocationPermissionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +356,7 @@
 		};
 		C63333792784890E00EC1061 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6683913E58FA032320CB7AC8 /* Pods-ExLocationPermission.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +386,7 @@
 		};
 		C633337A2784890E00EC1061 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5776AB2AE08496CC3E6BE0BE /* Pods-ExLocationPermission.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +400,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
